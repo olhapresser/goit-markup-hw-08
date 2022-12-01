@@ -1,0 +1,17 @@
+@import './utils/variables';
+
+@import './base/common';
+@import './base/resets';
+
+@import './components/modal';
+@import './components/header';
+@import './components/footer';
+
+@import './main-page/order';
+@import './main-page/advantages';
+@import './main-page/whatdo';
+@import './main-page/team';
+@import './main-page/customers';
+
+@import './portfolio/cards';
+@import './portfolio/examples';
