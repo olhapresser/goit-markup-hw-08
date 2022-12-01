@@ -35,27 +35,31 @@ body {
 }
 
 .container {
-    width: 100%;
     margin: 0 auto;
+    width: 100%;
     padding-right: 15px;
     padding-left: 15px;
 
-    @include mobile{
-max-width: 480px;
+  
+    @include mobile {
+      max-width: 420px;
     }
-
     @include tablet {
-        max-width: 768px;
+      max-width: 768px;
     }
-
     @include desktop {
-        max-width: 1200px;
+      max-width: 1200px;
     }
 }
 
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include desktop{
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
 
 .visually-hidden {

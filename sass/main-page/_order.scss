@@ -1,31 +1,71 @@
 .order {
 
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     margin: auto;
 
     background-color: #C4C4C4;
     text-align: center;
-    max-width: 1600px;
+    max-width: 100%;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/background1.jpg);
+        url(../images/mobile-back-1x.jpg);
+
+        @include retina{
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/mobile-back-2x.jpg);
+        }
+
+        @include tablet {
+
+            padding-top: 118px;
+            padding-bottom: 118px;
+
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/tablet-back-1x.jpg);
+
+            @include retina {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/tablet-back-2x.jpg);
+          }
+        }
+
+          @include desktop {
+            padding-top: 200px;
+            padding-bottom: 200px;
+            
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/desktop-back-1x.jpg);
+
+            @include retina {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/desktop-back-2x.jpg);
+          }
+          }
 }
 
 .order__heading {
 
-    margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    width: 696px;
-
+    margin-bottom: 30px;
+    width: 360px;
+    
     font-weight: 900;
-    font-size: 44px;
-    line-height: calc(60/44);
+    font-size: 26px;
+    line-height: calc(42/26);
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
     color: var(--white-color);
+
+@include desktop{
+    width: 696px;
+
+    font-size: 44px;
+    line-height: calc(60/44);
+}
+
 }
 
 .order__button {
