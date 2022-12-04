@@ -1264,7 +1264,6 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  width: 360px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.6153846154;
@@ -1273,9 +1272,14 @@ img {
   text-transform: uppercase;
   color: var(--white-color);
 }
+@media screen and (min-width: 768px) {
+  .order__heading {
+    max-width: 360px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .order__heading {
-    width: 696px;
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.3636363636;
   }
