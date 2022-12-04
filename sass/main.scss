@@ -1,20 +1,19 @@
-@import "./utils/variables";
-@import "./components/body";
-@import "./components/container";
-@import "./components/section";
-@import "./components/menu";
-@import "./components/page-header";
-@import "./components/logo";
-@import "./components/contacts";
-@import "./components/contacts-page";
-@import "./components/hero";
-@import "./components/solution";
-@import "./components/work";
-@import "./components/team";
-@import "./components/social";
-@import "./components/clients";
-@import "./components/footer";
-@import "./components/footer-form";
-@import "./components/modal";
-@import "./components/filter";
-@import "./components/cards";
+@import './utils/variables';
+@import './utils/mixins';
+
+@import './base/common';
+@import './base/resets';
+
+@import './components/modal';
+@import './components/header';
+@import './components/footer';
+@import './components/menu';
+
+@import './main-page/order';
+@import './main-page/advantages';
+@import './main-page/whatdo';
+@import './main-page/team';
+@import './main-page/customers';
+
+@import './portfolio/cards';
+@import './portfolio/examples';
