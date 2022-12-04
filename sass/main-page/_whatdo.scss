@@ -1,5 +1,8 @@
 .whatdo {
     padding-top: 0px;
+    @media (max-width: 1200px) {
+        display: none;
+     }
 }
 
 .whatdo__second-heading {
@@ -9,7 +12,7 @@
 .whatdo__list {
     display: flex;
     padding: 0;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .whatdo__item {
@@ -47,4 +50,9 @@
     text-align: center;
 
     color: var(--white-color);
+}
+
+.whatdo_img{
+    width: 370px;
+    max-width: none;
 }
