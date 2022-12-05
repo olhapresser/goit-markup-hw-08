@@ -4,6 +4,10 @@
 
 .team__second-heading {
     margin-bottom: 50px;
+
+    @media screen and (max-width:1999px) {
+        margin-bottom: 30px; 
+    }
 }
 
 .team__list {
@@ -55,6 +59,7 @@
 }
 
 .team__text {
+    margin-bottom: 16px;
     font-weight: 400;
     font-size: 16px;
     line-height: calc(19/16);
@@ -64,7 +69,6 @@
 .social-icons {
     display: flex;
     list-style-type: none;
-    margin-bottom: 30px;
     justify-content: center;
 }
 

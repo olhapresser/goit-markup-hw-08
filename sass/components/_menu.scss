@@ -68,6 +68,11 @@
  
     &.is-open .menu-social {
        display: flex;
+
+       @media screen and (max-width:479px) {
+         flex-wrap: wrap;
+         gap: 10px;
+       }
     }
  
     &.is-open .menu-social__item:not(:last-child) {
@@ -155,7 +160,7 @@
        &::after {
           content: "";
           position: absolute;
-          bottom: 0;
+          bottom: -1px;
           left: 0;
           display: block;
           width: 100%;

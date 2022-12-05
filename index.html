@@ -41,14 +41,14 @@
         <ul class="contacts list">
           <li class="contacts__item">
             <a href="mailto:info@devstudio.com" class="contacts__link" aria-label="іконка">
-              <svg class="contacts__mail contacts__icon" width="16" height="12">
+              <svg class="contacts__mail contacts__icon" width="14" height="10">
                 <use href="./images/icons-defs.svg#icon-hover-envelope"></use>
               </svg>
               info@devstudio.com</a>
           </li>
           <li class="contacts__item">
             <a href="tel:+380961111111" class="contacts__link" aria-label="іконка">
-              <svg class="contacts__tel contacts__icon" width="10" height="16">
+              <svg class="contacts__tel contacts__icon" width="10" height="14">
                 <use href="./images/icons-defs.svg#icon-hover-smartphone"></use>
               </svg>+38 096 111 11 11</a>
           </li>
@@ -149,19 +149,52 @@
     <h2 class="second-heading whatdo__second-heading">Чим ми займаємося</h2>
     <ul class="list whatdo__list">
         <li class="whatdo__item">
-          <img src="./images/img-1.jpg" alt="Комп'ютери" width="370" class="whatdo_img">
+          <picture class="whatdo_img">
+            <source 
+            srcset="
+            ./images/img-1.jpg 1x, 
+            ./images/img-1-2x.jpg 2x
+            "
+            media="(min-width: 1200px)"
+            />
+            <img src="./images/img-1.jpg" alt="Комп'ютери" width="370" >
+</picture>
+          
+          
+          
           <div class="whatdo__uptext">
             <p class="whatdo__text">Десктопні додатки</p>
           </div>
         </li>
         <li class="whatdo__item">
-          <img src="./images/img-2.jpg" alt="Телефони" width="370" class="whatdo_img">
+          <picture class="whatdo_img">
+            <source 
+            srcset="
+            ./images/img-2.jpg 1x, 
+            ./images/img-2-2x.jpg 2x
+            "
+            media="(min-width: 1200px)"
+            />
+            <img src="./images/img-2.jpg" alt="Комп'ютери" width="370" >
+</picture>          
+          
+          
           <div class="whatdo__uptext">
             <p class="whatdo__text">Мобільні додатки</p>
           </div>
         </li>
         <li class="whatdo__item">
-          <img src="./images/img-3.jpg" alt="Планшети" width="370" class="whatdo_img">
+          <picture class="whatdo_img">
+            <source 
+            srcset="
+            ./images/img-3.jpg 1x, 
+            ./images/img-3-2x.jpg 2x
+            "
+            media="(min-width: 1200px)"
+            />
+            <img src="./images/img-3-2x.jpg" alt="Комп'ютери" width="370" >
+</picture>
+
           <div class="whatdo__uptext">
             <p class="whatdo__text">Дизайнерські рішення</p>
           </div>
@@ -213,7 +246,6 @@
             <div class="team__name">
                 <h3 class="team__third-heading">Ігор Дем'яненко</h3>
             <p class="team__text" lang="en">Product Designer</p>
-            </div>
             <ul class="list social-icons">
                 <li class="item social-icons__item"><a href="" class="link social-icons__link"> <svg class="icon social-icons__icon">
                       <use href="./images/icons-defs.svg#icon-ntw-instagram"></use>
@@ -228,6 +260,7 @@
                       <use href="./images/icons-defs.svg#icon-ntw-linkedin"></use>
                     </svg></a></li>
               </ul>
+            </div>
         </li>
 
         <li class="item team__item">
@@ -266,7 +299,6 @@
             <div class="team__name">
                 <h3 class="team__third-heading">Ольга Рєпіна</h3>
             <p class="team__text" lang="en">Frontend Developer</p>
-            </div>
             <ul class="list social-icons">
               <li class="item social-icons__item"><a href="" class="link social-icons__link"> <svg class="icon social-icons__icon">
                     <use href="./images/icons-defs.svg#icon-ntw-instagram"></use>
@@ -281,6 +313,7 @@
                     <use href="./images/icons-defs.svg#icon-ntw-linkedin"></use>
                   </svg></a></li>
             </ul>
+          </div>
         </li>
 
         <li class="item team__item">
@@ -319,7 +352,6 @@
             <div class="team__name">
                 <h3 class="team__third-heading">Микола Тарасов</h3>
             <p class="team__text" lang="en">Marketing</p>
-            </div>
             <ul class="list social-icons">
               <li class="item social-icons__item"><a href="" class="link social-icons__link"> <svg class="icon social-icons__icon">
                     <use href="./images/icons-defs.svg#icon-ntw-instagram"></use>
@@ -334,6 +366,7 @@
                     <use href="./images/icons-defs.svg#icon-ntw-linkedin"></use>
                   </svg></a></li>
             </ul>
+          </div>
         </li>
 
         <li class="item team__item">
@@ -374,7 +407,6 @@
             <div class="team__name">
                 <h3 class="team__third-heading">Михайло Єрмаков</h3>
             <p class="team__text" lang="en">UI Designer</p>
-            </div>
             <ul class="list social-icons">
               <li class="item social-icons__item"><a href="" class="link social-icons__link"> <svg class="icon social-icons__icon">
                     <use href="./images/icons-defs.svg#icon-ntw-instagram"></use>
@@ -389,6 +421,7 @@
                     <use href="./images/icons-defs.svg#icon-ntw-linkedin"></use>
                   </svg></a></li>
             </ul>
+          </div>
         </li>
     </ul>
 </div>
